@@ -17,7 +17,7 @@
         ];
       };
 
-      targetSystems = [ "aarch64-linux" "x86_64-linux" ];
+      targetSystems = [ "aarch64-linux" "x86_64-linux" "aarch64-darwin"];
       mkRustToolchain = pkgs: pkgs.rust-bin.fromRustupToolchainFile ./rust-toolchain.toml;
     in
     {
